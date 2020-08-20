@@ -12,7 +12,6 @@ function isSSR() {
 
 if (!isSSR()) {
   window['pdfjs-dist/build/pdf'] = require('pdfjs-dist/build/pdf');
-  require('pdfjs-dist/web/compatibility');
   require('pdfjs-dist/web/pdf_viewer');
 
   PDFJS.verbosity = (<any>PDFJS).VERBOSITY_LEVELS.errors;
